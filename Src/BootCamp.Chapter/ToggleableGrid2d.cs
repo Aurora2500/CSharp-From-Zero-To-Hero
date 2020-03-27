@@ -2,13 +2,13 @@
 
 namespace BootCamp.Chapter
 {
-    public class ToggleableGrid2d : IToggleableGrid
+    public class ToggleableGrid2D : IToggleableGrid
     {
         bool[,] boolGrid;
         const char offChar = ' ';
-        const char onChar = '█';
+        const char onChar = '■';
 
-        public ToggleableGrid2d(bool[,] toggles)
+        public ToggleableGrid2D(bool[,] toggles)
         {
             boolGrid = toggles;
             updateScreen();

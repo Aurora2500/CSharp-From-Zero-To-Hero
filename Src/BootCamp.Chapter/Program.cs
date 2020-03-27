@@ -22,7 +22,7 @@ namespace BootCamp.Chapter
             };
 
 
-            var grid = new ToggleableGrid2d(boolGrid);
+            var grid = new ToggleableGrid2D(boolGrid);
             grid.Toggle(2, 2);
         }
     }
