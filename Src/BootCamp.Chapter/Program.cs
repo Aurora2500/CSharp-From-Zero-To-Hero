@@ -6,7 +6,24 @@ namespace BootCamp.Chapter
     {
         static void Main(string[] args)
         {
+            GridDemo();
+        }
 
+        static void GridDemo()
+        {
+            var boolGrid = new bool[6, 5] 
+            { 
+                {true, true, true, true, true },
+                { false, false, true, false, false },
+                { true, true, true, true, true},
+                { false, false, true, false, false},
+                { false, false, true, false, false},
+                { false, false, true, false, false}
+            };
+
+
+            var grid = new ToggleableGrid2d(boolGrid);
+            grid.Toggle(2, 2);
         }
     }
 }
